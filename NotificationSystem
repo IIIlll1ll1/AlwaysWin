@@ -1,4 +1,10 @@
+if not game.CoreGui:FindFirstChild("Notification System") then
+--//ScreenGui
+
 local NotificationSystem = Instance.new("ScreenGui")
+
+--//list
+
 local list = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
 local NotificationTable = Instance.new("Folder")
@@ -411,3 +417,5 @@ function main:Notification(Mode,Text,Duration)
 end
 
 return main
+
+end
