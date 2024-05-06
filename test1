@@ -1,9 +1,7 @@
-local sf = {}
+local NotificationLibrary = {}
 
-function sf:S()
-    print("s")
+function NotificationLibrary:Notify()
+print("s")
 end
 
-print("return")
-
-return sf
+return NotificationLibrary
