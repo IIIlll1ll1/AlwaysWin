@@ -4,4 +4,6 @@ function sf:S()
     print("s")
 end
 
+print("return")
+
 return sf
