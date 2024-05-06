@@ -1,7 +1,5 @@
 local main = {}
 
-print("Start load Notification System!")
-
 local NotificationSystem = Instance.new("ScreenGui")
 local list = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
@@ -386,8 +384,6 @@ bar_4.Size = UDim2.new(0.00999999978, 0, 0.0500000007, 0)
 bar_4.ZIndex = 3
 local Canvas = NotificationSystem.list
 
-print("Start load function!)
-
 function main:Notification(Mode,Text,Duration)
     if NotificationTable:FindFirstChild(Mode) then
         pcall(function()
@@ -413,7 +409,5 @@ function main:Notification(Mode,Text,Duration)
         end)
     end
 end
-
-print("last step return!")
 
 return main
