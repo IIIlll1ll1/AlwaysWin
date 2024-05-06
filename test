@@ -1,0 +1,7 @@
+local sf = {}
+
+function sf:S()
+    print("s")
+end
+
+return sf
