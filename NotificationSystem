@@ -384,7 +384,7 @@ bar_4.Size = UDim2.new(0.00999999978, 0, 0.0500000007, 0)
 bar_4.ZIndex = 3
 local Canvas = NotificationSystem.list
 
-main:Notification(Mode,Text,Duration)
+function main:Notification(Mode,Text,Duration)
     if NotificationTable:FindFirstChild(Mode) then
         pcall(function()
             local Notification = NotificationTable:WaitForChild(Mode):Clone()
