@@ -392,29 +392,31 @@ if not game.CoreGui:FindFirstChild("Notification System") then
     local Canvas = NotificationSystem.list
     
     function main:Notification(Mode,Text,Duration)
-        if NotificationTable:FindFirstChild(Mode) then
-            pcall(function()
-                local Notification = NotificationTable:WaitForChild(Mode):Clone()
-                Notification.Header.Text = Text
-                Notification.Size = UDim2.new(0, 0,0.087, 0)
-                Notification.Filler.Size = UDim2.new(1, 0,1, 0)
-                Notification.Parent = Canvas
-                Notification.Visible = true
+        task.spawn(function()
+            if NotificationTable:FindFirstChild(Mode) then
+                pcall(function()
+                    local Notification = NotificationTable:WaitForChild(Mode):Clone()
+                    Notification.Header.Text = Text
+                    Notification.Size = UDim2.new(0, 0,0.087, 0)
+                    Notification.Filler.Size = UDim2.new(1, 0,1, 0)
+                    Notification.Parent = Canvas
+                    Notification.Visible = true
     
-                Notification:TweenSize(UDim2.new(1, 0,0.087, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true)
-                task.wait(0.2)
-                Notification.Filler:TweenSize(UDim2.new(0.011, 0,1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3, true)
+                    Notification:TweenSize(UDim2.new(1, 0,0.087, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true)
+                    task.wait(0.2)
+                    Notification.Filler:TweenSize(UDim2.new(0.011, 0,1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3, true)
     
-                Notification.bar:TweenSize(UDim2.new(1, 0,0.05, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, Duration, true)
-                task.wait(Duration)
+                    Notification.bar:TweenSize(UDim2.new(1, 0,0.05, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, Duration, true)
+                    task.wait(Duration)
     
-                Notification.Filler:TweenSize(UDim2.new(1, 0,1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2,true)
-                task.wait(0.25)
-                Notification:TweenSize(UDim2.new(0, 0,0.087, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true)
-                task.wait(0.2)
-                Notification:Destroy()
-            end)
-        end
+                    Notification.Filler:TweenSize(UDim2.new(1, 0,1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2,true)
+                    task.wait(0.25)
+                    Notification:TweenSize(UDim2.new(0, 0,0.087, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true)
+                    task.wait(0.2)
+                    Notification:Destroy()
+                end)
+            end
+        end)
     end
     
     return main
@@ -813,29 +815,31 @@ else
     local Canvas = NotificationSystem.list
     
     function main:Notification(Mode,Text,Duration)
-        if NotificationTable:FindFirstChild(Mode) then
-            pcall(function()
-                local Notification = NotificationTable:WaitForChild(Mode):Clone()
-                Notification.Header.Text = Text
-                Notification.Size = UDim2.new(0, 0,0.087, 0)
-                Notification.Filler.Size = UDim2.new(1, 0,1, 0)
-                Notification.Parent = Canvas
-                Notification.Visible = true
+        task.spawn(function()
+            if NotificationTable:FindFirstChild(Mode) then
+                pcall(function()
+                    local Notification = NotificationTable:WaitForChild(Mode):Clone()
+                    Notification.Header.Text = Text
+                    Notification.Size = UDim2.new(0, 0,0.087, 0)
+                    Notification.Filler.Size = UDim2.new(1, 0,1, 0)
+                    Notification.Parent = Canvas
+                    Notification.Visible = true
     
-                Notification:TweenSize(UDim2.new(1, 0,0.087, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true)
-                task.wait(0.2)
-                Notification.Filler:TweenSize(UDim2.new(0.011, 0,1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3, true)
+                    Notification:TweenSize(UDim2.new(1, 0,0.087, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true)
+                    task.wait(0.2)
+                    Notification.Filler:TweenSize(UDim2.new(0.011, 0,1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3, true)
     
-                Notification.bar:TweenSize(UDim2.new(1, 0,0.05, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, Duration, true)
-                task.wait(Duration)
+                    Notification.bar:TweenSize(UDim2.new(1, 0,0.05, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, Duration, true)
+                    task.wait(Duration)
     
-                Notification.Filler:TweenSize(UDim2.new(1, 0,1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2,true)
-                task.wait(0.25)
-                Notification:TweenSize(UDim2.new(0, 0,0.087, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true)
-                task.wait(0.2)
-                Notification:Destroy()
-            end)
-        end
+                    Notification.Filler:TweenSize(UDim2.new(1, 0,1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2,true)
+                    task.wait(0.25)
+                    Notification:TweenSize(UDim2.new(0, 0,0.087, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true)
+                    task.wait(0.2)
+                    Notification:Destroy()
+                end)
+            end
+        end)
     end
 
     return main
