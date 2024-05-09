@@ -1,7 +1,0 @@
-local NotificationLibrary = {}
-
-function NotificationLibrary:Notify()
-print("s")
-end
-
-return NotificationLibrary
