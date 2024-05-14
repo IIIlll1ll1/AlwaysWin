@@ -1,0 +1,5 @@
+local PlaceId = game.PlaceId
+
+if PlaceId == 155615604 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/Prisonlife"))()
+end
