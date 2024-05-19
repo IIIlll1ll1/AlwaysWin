@@ -1,0 +1,4 @@
+--此黑名单针对那些不好好使用脚本滥用我的webhook的用户执行的重度惩罚
+return {
+    ["dfkghlkslc9348d"] = true
+}
