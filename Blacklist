@@ -1,4 +1,5 @@
 --此黑名单针对那些不好好使用脚本滥用我的webhook的用户执行的轻度惩罚
 return {
-    ["nigger"] = true
+    ["小吉祥老师"] = true,
+    ["WCNM_SB250FW"] = true
 }
