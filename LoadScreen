@@ -59,6 +59,5 @@ Frame:TweenSizeAndPosition(
 task.wait(3)
 
 Frame:TweenPosition(UDim2.new(1.526, 0,0.065, 0), "InOut", "Quad", 0.5, true)
-print(Frame.Position)
 
 LoadScreen:Destroy()
