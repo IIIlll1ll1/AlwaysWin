@@ -2,6 +2,8 @@ local PlaceId = game.PlaceId
 
 if PlaceId == 155615604 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/Prisonlife"))()
+elseif PlaceId == 4639625707 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/WarTycoon"))()
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/Universal"))()
 end
