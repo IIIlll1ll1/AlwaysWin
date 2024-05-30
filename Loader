@@ -6,6 +6,8 @@ elseif PlaceId == 4639625707 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/WarTycoon"))()
 elseif PlaceId == 3623096087 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/MuscleLegends"))()
+elseif PlaceId == 6766156863 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/StrongmanSimulator"))()
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/Universal"))()
 end
