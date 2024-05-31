@@ -1,5 +1,5 @@
 local PlaceId = game.PlaceId
-if _G.ScriptIsRunning == false then
+if _G.ScriptIsRunning ~= true then
     _G.ScriptIsRunning = true
     if PlaceId == 155615604 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/Prisonlife"))()
@@ -14,6 +14,6 @@ if _G.ScriptIsRunning == false then
     else
         loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/AlwaysWin/main/scripts/Universal"))()
     end
-else
+elseif _G.ScriptIsRunning == true then
     game.StarterGui:SetCore("SendNotification", {Title = "通知",Text = "请勿重复加载脚本"})
 end
