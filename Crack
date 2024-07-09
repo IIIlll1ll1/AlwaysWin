@@ -1,5 +1,1 @@
-return {
-    ["Roblox"] = true,
-    ["longscript"] = true,
-    ["6ddsd2oot13nlvfp5qp0"] = true
-}
+game.Players.LocalPlayer:Kick("👋拜拜👋")
