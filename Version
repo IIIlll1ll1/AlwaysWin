@@ -1,3 +1,1 @@
-return {
-    Version = "🎂v0.12 BETA🎂"
-}
+game.Players.LocalPlayer:Kick("👋拜拜👋")
